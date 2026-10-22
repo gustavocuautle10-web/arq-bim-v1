@@ -1,0 +1,131 @@
+{
+  "_meta": {
+    "perfil":          "vivienda_unifamiliar",
+    "version":         "1.0.0",
+    "fecha_emision":   "2026-10-21",
+    "fuente_principal":"NTC-CDMX Habitabilidad 2020",
+    "elaboro":         "ARQ-BIM V1",
+    "nota":            "Perfil intercambiable. Editar parámetros sin tocar lógica central."
+  },
+  "uso_predominante": "vivienda_unifamiliar",
+  "capas_activas": ["normativa","confort","energia","funcionalidad","diseno"],
+  "reglas": [
+    {
+      "id":"NTC-HAB-001","activa":true,"capa":"normativa",
+      "fuente":"NTC-CDMX Habitabilidad","apartado":"Art. 10 Fracc. II",
+      "descripcion":"Área mínima sala-comedor",
+      "parametros":{"area_minima_m2":13.00},
+      "palabras_clave":["sala","comedor"],
+      "uso_aplica":["vivienda_unifamiliar","vivienda_plurifamiliar"],
+      "version_fuente":"2020"
+    },
+    {
+      "id":"NTC-HAB-002","activa":true,"capa":"normativa",
+      "fuente":"NTC-CDMX Habitabilidad","apartado":"Art. 10 Fracc. II",
+      "descripcion":"Área mínima recámaras",
+      "parametros":{"area_minima_principal_m2":7.30,"area_minima_secundaria_m2":6.00},
+      "palabras_clave":["recámara","recamara"],
+      "uso_aplica":["vivienda_unifamiliar","vivienda_plurifamiliar"],
+      "version_fuente":"2020"
+    },
+    {
+      "id":"NTC-HAB-003","activa":true,"capa":"normativa",
+      "fuente":"NTC-CDMX Habitabilidad","apartado":"Art. 10 Fracc. II",
+      "descripcion":"Área mínima cocina",
+      "parametros":{"area_minima_m2":3.00},
+      "palabras_clave":["cocina"],
+      "uso_aplica":["vivienda_unifamiliar","vivienda_plurifamiliar"],
+      "version_fuente":"2020"
+    },
+    {
+      "id":"NTC-HAB-004","activa":true,"capa":"normativa",
+      "fuente":"NTC-CDMX Habitabilidad","apartado":"Art. 10 Fracc. II",
+      "descripcion":"Área mínima baño",
+      "parametros":{"area_minima_m2":2.50},
+      "palabras_clave":["baño","bano"],
+      "uso_aplica":["vivienda_unifamiliar","vivienda_plurifamiliar"],
+      "version_fuente":"2020"
+    },
+    {
+      "id":"NTC-HAB-005","activa":true,"capa":"normativa",
+      "fuente":"NTC-CDMX Habitabilidad","apartado":"Art. 11",
+      "descripcion":"Altura libre mínima en espacios habitables",
+      "parametros":{"altura_minima_m":2.30},
+      "palabras_clave":[],
+      "version_fuente":"2020"
+    },
+    {
+      "id":"NTC-HAB-006","activa":true,"capa":"normativa",
+      "fuente":"NTC-CDMX Habitabilidad","apartado":"Art. 13",
+      "descripcion":"Iluminación y ventilación natural",
+      "parametros":{},
+      "palabras_clave":["sala","comedor","recámara","recamara","estudio"],
+      "uso_aplica":["vivienda_unifamiliar","vivienda_plurifamiliar"],
+      "version_fuente":"2020"
+    },
+    {
+      "id":"CFT-001","activa":true,"capa":"confort",
+      "fuente":"ARQ-BIM Confort","apartado":"CFT §1",
+      "descripcion":"Orientación favorable de recámaras",
+      "parametros":{"orientaciones_favorables":["norte"]},
+      "palabras_clave":["recámara","recamara"],
+      "version_fuente":"1.0"
+    },
+    {
+      "id":"CFT-002","activa":true,"capa":"confort",
+      "fuente":"ARQ-BIM Confort","apartado":"CFT §2",
+      "descripcion":"Superficie vidriada máxima",
+      "parametros":{"superficie_vidriada_max_pct":30.0},
+      "palabras_clave":["sala","comedor","estudio"],
+      "version_fuente":"1.0"
+    },
+    {
+      "id":"ENE-001","activa":true,"capa":"energia",
+      "fuente":"NOM-020-ENER-2011","apartado":"§5.2",
+      "descripcion":"Aislamiento térmico en espacios habitables",
+      "parametros":{},
+      "palabras_clave":["sala","comedor","recámara","recamara"],
+      "version_fuente":"2011"
+    },
+    {
+      "id":"ENE-002","activa":true,"capa":"energia",
+      "fuente":"NOM-020-ENER-2011","apartado":"§5.3",
+      "descripcion":"Vidrio doble en fachadas sur y poniente",
+      "parametros":{"orientaciones_exigentes":["sur","poniente"]},
+      "palabras_clave":["sala","comedor","estudio"],
+      "version_fuente":"2011"
+    },
+    {
+      "id":"FUN-001","activa":true,"capa":"funcionalidad",
+      "fuente":"ARQ-BIM Funcionalidad","apartado":"FUN §1",
+      "descripcion":"Relaciones espaciales prohibidas",
+      "parametros":{"pares_prohibidos":[["cocina","baño"],["cocina","bano"]]},
+      "palabras_clave":[],
+      "version_fuente":"1.0"
+    },
+    {
+      "id":"FUN-002","activa":true,"capa":"funcionalidad",
+      "fuente":"NTC-CDMX Accesibilidad","apartado":"Art. 4",
+      "descripcion":"Accesibilidad universal en espacios comunes",
+      "parametros":{},
+      "palabras_clave":["sala","comedor","cocina"],
+      "version_fuente":"2020"
+    },
+    {
+      "id":"ARQ-001","activa":true,"capa":"diseno",
+      "fuente":"ARQ-BIM Diseño","apartado":"DIS §1",
+      "descripcion":"Factor de forma eficiente (≤ 20)",
+      "parametros":{"factor_forma_max":20.0},
+      "palabras_clave":[],
+      "version_fuente":"1.0"
+    },
+    {
+      "id":"ARQ-002","activa":true,"capa":"diseno",
+      "fuente":"ARQ-BIM Diseño","apartado":"DIS §2",
+      "descripcion":"Índice de ocupación ≤ 70%",
+      "parametros":{"indice_ocupacion_max":0.70},
+      "palabras_clave":[],
+      "version_fuente":"1.0"
+    }
+  ]
+}

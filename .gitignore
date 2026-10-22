@@ -1,0 +1,15 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+venv/
+.env
+.venv
+.vscode/
+.idea/
+*.docx
+*.pdf
+*.zip
+drafted_*.json
+.ipynb_checkpoints/
+_tema_config.json
+*.log
