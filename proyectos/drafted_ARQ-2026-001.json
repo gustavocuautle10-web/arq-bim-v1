@@ -1,0 +1,134 @@
+{
+  "meta": {
+    "id_proyecto": "ARQ-2026-001",
+    "nombre_proyecto": "Casa Habitación Unifamiliar",
+    "fecha_elaboracion": "2026-11-03",
+    "elaboro": "Ing. Gustavo Ángel Cuautle Zimarrón",
+    "estado": "DRAFTED",
+    "version_esquema": "ARQ-BIM-V1"
+  },
+  "terreno": {
+    "frente_m": 10.0,
+    "fondo_m": 20.0,
+    "area_total_m2": 200.0,
+    "colindancia_norte": "Calle Principal",
+    "colindancia_sur": "Casa vecina",
+    "colindancia_este": "Casa vecina",
+    "colindancia_oeste": "Paso de servidumbre",
+    "ubicacion": "San Andrés Cholula, Puebla",
+    "normativa": "REGLAMENTO DE CONSTRUCCIONES DE SAN ANDRÉS CHOLULA"
+  },
+  "orientacion": {
+    "frente_cardinal": "SUR",
+    "descripcion": "El frente del predio da hacia el Sur, favoreciendo la captación solar en áreas sociales"
+  },
+  "programa": [
+    {
+      "id": "E-01",
+      "nombre": "Sala-Comedor",
+      "area_m2": 28.5,
+      "nivel": "PB",
+      "orientacion": "SUR",
+      "superficie_vidriada_pct": 35,
+      "tipo": "social",
+      "iluminacion_natural": true,
+      "ventilacion_natural": true
+    },
+    {
+      "id": "E-02",
+      "nombre": "Cocina",
+      "area_m2": 10.0,
+      "nivel": "PB",
+      "orientacion": "ESTE",
+      "superficie_vidriada_pct": 20,
+      "tipo": "servicio",
+      "iluminacion_natural": true,
+      "ventilacion_natural": true
+    },
+    {
+      "id": "E-03",
+      "nombre": "Patio de Servicio",
+      "area_m2": 6.0,
+      "nivel": "PB",
+      "orientacion": "NORTE",
+      "superficie_vidriada_pct": 0,
+      "tipo": "servicio",
+      "iluminacion_natural": true,
+      "ventilacion_natural": true
+    },
+    {
+      "id": "E-04",
+      "nombre": "Baño Visitas",
+      "area_m2": 2.5,
+      "nivel": "PB",
+      "orientacion": "NORTE",
+      "superficie_vidriada_pct": 10,
+      "tipo": "sanitario",
+      "iluminacion_natural": false,
+      "ventilacion_natural": false
+    },
+    {
+      "id": "E-05",
+      "nombre": "Recámara Principal",
+      "area_m2": 18.0,
+      "nivel": "PA",
+      "orientacion": "NORTE",
+      "superficie_vidriada_pct": 25,
+      "tipo": "privado",
+      "iluminacion_natural": true,
+      "ventilacion_natural": true
+    },
+    {
+      "id": "E-06",
+      "nombre": "Recámara 2",
+      "area_m2": 12.0,
+      "nivel": "PA",
+      "orientacion": "NORTE",
+      "superficie_vidriada_pct": 20,
+      "tipo": "privado",
+      "iluminacion_natural": true,
+      "ventilacion_natural": true
+    },
+    {
+      "id": "E-07",
+      "nombre": "Baño Completo",
+      "area_m2": 4.0,
+      "nivel": "PA",
+      "orientacion": "ESTE",
+      "superficie_vidriada_pct": 10,
+      "tipo": "sanitario",
+      "iluminacion_natural": false,
+      "ventilacion_natural": false
+    },
+    {
+      "id": "E-08",
+      "nombre": "Estacionamiento",
+      "area_m2": 15.0,
+      "nivel": "PB",
+      "orientacion": "SUR",
+      "superficie_vidriada_pct": 0,
+      "tipo": "complementario",
+      "iluminacion_natural": false,
+      "ventilacion_natural": true
+    }
+  ],
+  "geometria_simplificada": [
+    {"id": "E-01", "nombre": "Sala-Comedor",      "x": 0,   "y": 0,   "ancho": 7.0, "fondo": 4.0},
+    {"id": "E-02", "nombre": "Cocina",             "x": 7,   "y": 0,   "ancho": 3.0, "fondo": 4.0},
+    {"id": "E-03", "nombre": "Patio de Servicio",  "x": 7,   "y": 4,   "ancho": 3.0, "fondo": 2.0},
+    {"id": "E-04", "nombre": "Baño Visitas",        "x": 0,   "y": 4,   "ancho": 2.5, "fondo": 2.0},
+    {"id": "E-05", "nombre": "Recámara Principal",  "x": 0,   "y": 0,   "ancho": 5.0, "fondo": 4.0},
+    {"id": "E-06", "nombre": "Recámara 2",          "x": 5,   "y": 0,   "ancho": 5.0, "fondo": 3.0},
+    {"id": "E-07", "nombre": "Baño Completo",       "x": 5,   "y": 3,   "ancho": 3.0, "fondo": 2.0},
+    {"id": "E-08", "nombre": "Estacionamiento",     "x": 0,   "y": 6,   "ancho": 5.0, "fondo": 3.0}
+  ],
+  "especificaciones_materiales": {
+    "estructura": "Marcos de concreto reforzado, losas macizas",
+    "muros": "Block hueco de concreto 15x20x40 con aplanado cemento-arena",
+    "impermeabilizacion": "Membrana asfáltica tipo Torchon con capa reflectante",
+    "acabados_interiores": "Yeso fino, pintura vinílica lavable",
+    "canceleria": "Aluminio natural con vidrio templado 6mm",
+    "pisos": "Porcelanato rectificado 60x60cm en áreas sociales; loseta cerámica en baños",
+    "fachada": "Mezcla aparente texturizada + recubrimiento acrílico"
+  }
+}
