@@ -13,3 +13,6 @@ drafted_*.json
 .ipynb_checkpoints/
 _tema_config.json
 *.log
+output_arqbim/
+output_visual/
+output_pdf/
